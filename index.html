@@ -12,16 +12,27 @@
             color: black;
         }
 
-        img {
+        img.main-img {
             width: 500px;
             height: auto;
             display: block;
             margin-bottom: 20px;
-
         }
 
-        h1,
-        h2 {
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-pic {
+            width: 80px; /* 2x2 picture size */
+            height: 80px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+
+        h1, h2 {
             color: black;
         }
 
@@ -72,8 +83,14 @@
 </head>
 
 <body>
-    <img src="image.png">
-    <h1>VINCE ALLEN GOMEZ</h1>
+
+    <img src="image.png" class="main-img">
+
+    <!-- NAME + 2x2 IMAGE -->
+    <div class="header">
+        <h1>VINCE ALLEN GOMEZ</h1>
+        <img src="profile.jpg" alt="2x2 Picture" class="profile-pic">
+    </div>
 
     <div class="contact">
         <p>
@@ -132,6 +149,7 @@
         <ul>
             <li>Perfect Attendance</li>
         </ul>
+
         <div class="container">
             <div class="left">
                 Unida St., Anabu 1F, City of Imus, Cavite<br>
@@ -140,7 +158,7 @@
                 ucc-cavite,edu,ph<br>
             </div>
         </div>
+    </div>
+
 </body>
-
-
 </html>
